@@ -1,0 +1,349 @@
+.header {
+	position: sticky;
+	top: 0;
+	background-color: $white;
+	font-size: 12px;
+	z-index: 100;
+
+	font-weight: 400;
+	&__top {
+		position: relative;
+		height: 37px;
+		background-color: $dark;
+		padding: 5px 0px;
+		color: $grey;
+		z-index: 99;
+
+		& a {
+			color: $grey;
+		}
+	}
+	&__info {
+		display: flex;
+		height: 100%;
+		align-items: flex-end;
+	}
+	&__location {
+		display: flex;
+		height: 100%;
+		line-height: 27px;
+		align-items: baseline;
+	}
+	&__logo {
+		margin-left: 1px;
+		width: 195px;
+	}
+	&__navigations {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+		margin-left: 36px;
+	}
+
+	&__basic {
+		height: 92px;
+		border-bottom: 1px solid #f2f2f2;
+		box-shadow: 0 2px 15px #f2f2f2;
+		z-index: 99;
+
+		&_container {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+	&__bottom {
+		display: flex;
+		padding: 8px 0;
+		font-size: 14px;
+		font-weight: 600;
+		color: $dark;
+		overflow: hidden;
+	}
+	&__burger {
+		display: flex;
+		flex: none;
+		justify-content: center;
+		align-items: center;
+		width: 147px;
+		height: 40px;
+		margin-left: 83px;
+		font-weight: 700;
+		transition: 0.5s ease;
+		&:hover span {
+			transform: scale(1.5);
+		}
+
+		& span {
+			position: relative;
+			width: 10px;
+			height: 9px;
+			margin-right: 8px;
+		}
+		& span::before,
+		span::after {
+			content: "";
+			position: absolute;
+			width: 16px;
+			height: 2px;
+			left: -5px;
+
+			border-radius: 100%;
+			background-color: $white;
+		}
+		& span::after {
+			bottom: 0;
+		}
+		&_tablet {
+		}
+	}
+	&__links {
+		display: flex;
+		position: relative;
+		height: 16px;
+		overflow: hidden;
+
+		gap: 26px;
+		&_wrap {
+			flex-wrap: wrap;
+		}
+		&_right {
+			padding-left: 16px;
+			flex: none;
+		}
+	}
+	&__link {
+		position: relative;
+		overflow: hidden;
+		color: $dark;
+		height: 16px;
+		line-height: 16px;
+		&:hover span {
+			transform: translateY(100%);
+		}
+		& span {
+			position: relative;
+			transition: all 0.35s ease;
+		}
+
+		&:hover::before {
+			transform: translateY(100%);
+		}
+		&::before {
+			content: attr(data-title);
+			padding: 2px 0;
+			position: absolute;
+			bottom: 100%;
+			left: 0;
+			white-space: nowrap;
+			transition: all 0.35s ease;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+		}
+	}
+	&__panel {
+		height: 60px;
+		display: flex;
+		align-items: center;
+		margin: 0 -4px;
+	}
+	&__search {
+		border-radius: 10px;
+		width: 659px;
+		flex: 0 1 auto;
+		height: 40px;
+		border: 1px solid $grey;
+		background-color: $grey;
+		margin: 0 16px;
+		// &:hover,
+		// :active {
+		// 	border: 1px solid $darkGrey;
+		// 	background-color: $darkGrey;
+		// }
+	}
+	&__actions {
+		display: flex;
+	}
+	&__sign-in {
+		width: 100px;
+		height: 40px;
+		background-color: #f2f3f5;
+		display: flex;
+		align-items: center;
+		font-weight: 600;
+		line-height: 16px;
+		font-size: 12px;
+		color: $darkGrey;
+		border: 1px solid #f2f3f5;
+		transition: all 0.5s ease;
+		&:hover,
+		:active,
+		:focus {
+			border: 1px solid #27ae60;
+		}
+	}
+	.sign-in {
+		overflow: hidden;
+		&__icon {
+			position: relative;
+			width: 30px;
+			height: 30px;
+			padding: 6px;
+			margin: 6px;
+			border-radius: 100%;
+			border: 1.5px solid $black;
+			background-color: #fff;
+			transition: all 0.5s ease;
+
+			&::before {
+				content: "Выход";
+				position: absolute;
+				height: 16px;
+				line-height: 16px;
+				right: 36px;
+			}
+			&::after {
+				content: "Вход";
+				position: absolute;
+				height: 16px;
+				line-height: 16px;
+				left: 36px;
+			}
+			&__false {
+				transform: translateX(54px);
+			}
+		}
+
+		&__img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+.search {
+	&__container {
+		position: relative;
+		display: flex;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__input {
+		width: 100%;
+		font-size: 14px;
+		padding-left: 27px;
+		background-color: none;
+		&:hover,
+		:focus,
+		:active {
+			background-color: #fff;
+		}
+	}
+
+	&__btn {
+		width: 98px;
+		background-color: #ffffff00;
+	}
+	&__modal {
+		position: absolute;
+		display: none;
+		flex-direction: column;
+		flex: 1 0 auto;
+		width: 100%;
+		max-height: 670px;
+		background-color: $white;
+		top: 46px;
+		box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+		z-index: 100;
+	}
+	&__show-more {
+		position: relative;
+		bottom: 0;
+		width: 100%;
+		height: 75px;
+		background-color: #f2f3f5;
+		&_btn {
+			display: flex;
+			width: 273px;
+			height: 48px;
+			line-height: 48px;
+			margin: 14px auto;
+			justify-content: center;
+		}
+	}
+	&__results {
+		width: 100%;
+		height: 100%;
+		padding: 34px 34px 0;
+		overflow: auto;
+		font-size: 16px;
+		color: $darkGrey;
+	}
+
+	&__categories {
+		margin-bottom: 32px;
+	}
+	&__title {
+		font-weight: 700;
+	}
+	&__category {
+		display: flex;
+		line-height: 50px;
+		height: 50px;
+		font-weight: 400;
+		font-size: 16px;
+		overflow: hidden;
+		border-bottom: 1px solid #ececec;
+		align-items: baseline;
+		& svg {
+			margin-right: 6px;
+		}
+		&:hover,
+		:focus {
+			transition: all 0.3s ease-out;
+			background-color: #f2f3f5;
+			box-shadow: inset 0px 20px 20px 13px white;
+		}
+	}
+	&__sections {
+		margin-bottom: 33px;
+		& h4 {
+			margin-bottom: 6px;
+		}
+	}
+	&__products {
+	}
+
+	&__product {
+		display: flex;
+		align-items: center;
+		padding: 6px 0 8px;
+		border-bottom: 1px solid #ececec;
+		&_img {
+			flex: none;
+			width: 52px;
+			height: 50px;
+			background-color: #f2f3f5;
+		}
+		&_text {
+			flex: 1 1 auto;
+			overflow: hidden;
+			margin-left: 16px;
+			font-size: 14px;
+			line-height: 20px;
+		}
+		&_price {
+			flex: 0 0 auto;
+			font-weight: 700;
+			letter-spacing: 0.32px;
+		}
+		&:hover,
+		:focus {
+			transition: all 0.3s ease-out;
+			transform: scale(1.03);
+		}
+	}
+
+	.right {
+	}
+}
