@@ -145,7 +145,9 @@ body {
 }
 .btn {
 	cursor: pointer;
-
+	&__black {
+		background-color: $black;
+	}
 	&__header {
 		display: flex;
 		justify-content: center;
@@ -254,11 +256,7 @@ body {
 		gap: 16px;
 
 		&_cards {
-			margin: 54px 8px 84px 0;
-			//grid-auto-columns: auto;
-			//grid-auto-flow: column dense;
-			grid-template-columns: minmax(880px, auto) minmax(778px, 1fr);
-			gap: 16px;
+			margin: 21px 0px 28px 0;
 		}
 		&_1 {
 			grid-template-columns: repeat(2, 1fr);
@@ -344,6 +342,11 @@ body {
 				font-weight: 600;
 			}
 		}
+		&_btn-warranty {
+			& img {
+				padding-left: 24px;
+			}
+		}
 		&_horisontal {
 			grid-template-columns: repeat(2, 1fr);
 		}
@@ -369,14 +372,30 @@ body {
 		}
 	}
 	&__list {
+		padding-left: 26px;
+
 		&_item {
-			list-style: disc;
+			position: relative;
+			&::before {
+				content: "\2022";
+				position: absolute;
+				left: -16px;
+				// &::before {
+				// 	content: "\2022";
+				// 	position: relative;
+				// 	margin-right: 4px;
+				// }
+			}
 		}
 	}
 
 	&__info {
 		max-width: 1180px;
 		&_how-to {
+			margin-top: 34px;
+			& h2 {
+				margin-bottom: 28px;
+			}
 		}
 		&_description {
 		}
@@ -387,6 +406,9 @@ body {
 			margin-bottom: 50px;
 		}
 		&_feedback {
+			& h2 {
+				margin-bottom: 28px;
+			}
 		}
 	}
 }
@@ -451,7 +473,7 @@ body {
 	}
 	&__card {
 		&_help {
-			margin-bottom: 16px;
+			margin-bottom: 12px;
 			& h2 {
 				padding-right: 50px;
 				line-height: 26px;
@@ -464,6 +486,57 @@ body {
 			& button {
 				font-size: 14px;
 			}
+		}
+		&_delivery {
+		}
+		&_delivery-img {
+			position: relative;
+			max-width: 337px;
+			height: 87px;
+			margin-right: 15px;
+			& img {
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 100%;
+				bottom: 0;
+			}
+		}
+		&_bonus {
+			font-size: 14px;
+			line-height: 14px;
+			grid-template-columns: 1fr;
+			letter-spacing: 0.3px;
+			& h2 {
+				margin: 2px 0 10px;
+			}
+			& ul {
+				line-height: normal;
+			}
+		}
+		&_paid {
+			margin-top: 12px;
+			//margin-bottom: 34px;
+			& h2 {
+				margin-bottom: 16px;
+			}
+		}
+		&_paid-links {
+			& li {
+				position: relative;
+			}
+			& li::after {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				height: 1px;
+				background: #ececec;
+			}
+		}
+		&_return {
+		}
+		&_return-img {
 		}
 	}
 	&__cart {
@@ -480,7 +553,6 @@ body {
 	}
 
 	&__footer {
-		position: relative;
 		&_help {
 			margin-top: 38px;
 			border-bottom: 1px solid $darkGrey;
@@ -500,16 +572,16 @@ body {
 		}
 	}
 	&__delivery_title {
-		margin-bottom: 40px;
+		margin-bottom: 36px;
 	}
 	&__download {
 		position: absolute;
 		width: 100%;
-		top: -154px;
+		top: -135px;
 		border-top-left-radius: 10px;
 		border-top-right-radius: 10px;
 		padding: 20px 16px 30px;
-		background-color: red;
+		background-color: $darkGrey;
 		& h4 {
 			font-family: "PT Sans", sans-serif;
 			font-weight: 700;
@@ -518,6 +590,7 @@ body {
 		}
 		&_btns {
 			display: flex;
+			gap: 12px;
 			justify-content: space-between;
 			height: 43px;
 		}
@@ -621,6 +694,21 @@ body {
 			padding: 0 22px 14px 0;
 		}
 	}
+	&__warranty {
+		display: flex;
+		flex-direction: column;
+		padding-left: 2px;
+		margin-bottom: 36px;
+
+		& h2 {
+			letter-spacing: 0.26px;
+			margin-bottom: 19px;
+		}
+		& p {
+			line-height: 24px;
+			margin-bottom: 24px;
+		}
+	}
 }
 
 .mobile-plus {
@@ -664,6 +752,23 @@ body {
 		}
 	}
 	.main {
+		&__card {
+			&_orange {
+				color: $white;
+				padding: 21px 23px 32px;
+				& h2 {
+					font-size: 20px;
+				}
+				& p {
+					font-size: 14px;
+				}
+			}
+		}
+		&__info {
+			&_section {
+				margin-bottom: 36px;
+			}
+		}
 		&__title {
 			padding-left: 0;
 			margin-bottom: 26px;
@@ -674,6 +779,9 @@ body {
 				font-family: "Montserrat", sans-serif;
 				font-weight: 700;
 			}
+		}
+		&__section {
+			gap: 20px;
 		}
 		.order {
 			order: 1;
@@ -701,6 +809,26 @@ body {
 @media screen and (max-width: 1023px) {
 	.laptop-s-plus {
 		display: none;
+	}
+	.mobile {
+		&__card {
+			&_return {
+				margin: 56px 0 55px;
+				background: $gradientGrey;
+				border-radius: 20px;
+				padding: 0 24px 32px 15px;
+				& p {
+					margin-bottom: -12px;
+				}
+			}
+			&_return-img {
+				position: relative;
+				transform: translateX(-62%);
+				top: -28px;
+				left: 50%;
+				margin-bottom: -16px;
+			}
+		}
 	}
 }
 @media screen and (min-width: 1024px) {
@@ -758,5 +886,8 @@ body {
 	.container {
 		max-width: 1744px;
 		padding: 0 32px;
+	}
+	.main__section_cards {
+		grid-template-columns: minmax(auto, 880px) minmax(586px, 1fr);
 	}
 }

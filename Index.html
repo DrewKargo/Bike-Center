@@ -358,9 +358,9 @@
 						<h3>8 (800) 500-30-20</h3>
 					</div>
 				</section>
-				<section class="main__section">
+				<section class="main__section main__section_cards">
 					<div class="main__section main__section_1 tablet-plus">
-						<div class="main__card main__card_help border__large">
+						<div class="main__card main__card_help main__card_adaptive border__large">
 							<div class="main__card_help_img">
 								<img class="" src="./img/help.png" alt="Помощь">
 							</div>
@@ -419,7 +419,7 @@
 						</div>
 						<h2 class="mobile mobile__delivery_title">Доставка</h2>
 						<div class="main__card main__card_orange order border__large">
-							<div class="main__section main__card_horisontal ">
+							<div class="main__card_horisontal mobile__card_bonus">
 								<div class="main__card_info">
 									<h2>Бонусная система</h2>
 									<ul class="main__list">
@@ -434,7 +434,7 @@
 										</li>
 									</ul>
 								</div>
-								<div style="display: none;" class="main__card_img">
+								<div  class="main__card_img tablet-plus">
 									<img class="" src="./img/Bonus.svg" alt="Бонус">
 									<img src="./img/Coin_1.png" alt="Монета-1">
 									<img src="./img/Coin_2.png" alt="Монета-2">
@@ -462,11 +462,56 @@
 									<button class="btn btn__dark   btn__adaptive border mobile">Узнать подробнее</button>
 									<button class="btn btn__dark btn__fix  border tablet-plus">Расчитать доставку</button>
 								</div>
-								<div class="main__card_img order-1">
+								<div class="mobile__card_delivery-img order-1">
 									<img class="" src="./img/Delivery.png" alt="Доставка">
 								</div>
 							</div>
 						</div>
+					</div>
+					<div class="mobile__card_paid mobile">
+						<h2>Оплата</h2>
+						<ul class="mobile__links mobile__card_paid-links">
+							<li class="mobile__link">
+								Как оплатить заказ
+								<div class="right">
+									<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path id="Vector" d="M0.590576 11L6.05041 6L0.590576 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</div>
+							</li>
+							<li class="mobile__link">
+								Наложенный платеж
+								<div class="right">
+									<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path id="Vector" d="M0.590576 11L6.05041 6L0.590576 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</div>
+							</li>
+							<li class="mobile__link">
+								Оплата электронными деньгами
+								<div class="right">
+									<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path id="Vector" d="M0.590576 11L6.05041 6L0.590576 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</div>
+							</li>
+							<li class="mobile__link">
+								Как оплатить если нет карты
+								<div class="right">
+									<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path id="Vector" d="M0.590576 11L6.05041 6L0.590576 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</div>
+							</li>
+							<li class="mobile__link">
+								Подарочные карты
+								<div class="right">
+									<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path id="Vector" d="M0.590576 11L6.05041 6L0.590576 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</div>
+							</li>
+						</ul>
 					</div>
 				</section>
 				<section class="main__info">
@@ -497,9 +542,10 @@
 					</div>
 					<div class="main__info_section main__info_return">
 						<h2>Легкий возврат</h2>
-						<div class="main__info_description">
-							<p>Покупайте, пробуйте, вам понравится, если нет, мы вернем вам деньги! Без вопросов, заявлений и дополнительных комиссий.
-								Вы вправе передумать. Мы в «Байк Центре» понимаем это, и с радостью сделаем вам обмен на понравившийся вам товар или вернём деньги.</p>
+						<div class="main__info_description mobile__card_return">
+							<img class="mobile__card_return-img mobile-plus" src="./img/Return-mobile.png" alt="Возврат">
+							<p><span class="laptop-s-plus">Покупайте, пробуйте, вам понравится, если нет, мы вернем вам деньги! Без вопросов, заявлений и дополнительных комиссий.
+								Вы вправе передумать. </span>Мы в «Байк Центре» понимаем это, и с радостью сделаем вам обмен на понравившийся вам товар или вернём деньги.</p>
 							<br>
 							<ul class="main__list">
 								<li class="main__list_item">
@@ -515,16 +561,18 @@
 									сдайте заказ в том же месте, где получали его или другом удобном вам партнёрском пункте выдачи заказов или магазине;
 								</li>
 							</ul>
-							<br>
-							<br>
-							<p>Возврат и обмен товара производится на основании Закона РФ "О защите прав потребителей" и регулируется ст. 18, 19, 20, 21.</p>
-							<br>
-							<p>В случае доставки на дом и возникновения гарантийного случая/наличия брака у товара, мы самостоятельно и за свой счёт заберём от вас данный товар.</p>
+							<p class="laptop-s-plus">Возврат и обмен товара производится на основании Закона РФ "О защите прав потребителей" и регулируется ст. 18, 19, 20, 21.</p>
+							<p class="laptop-s-plus">В случае доставки на дом и возникновения гарантийного случая/наличия брака у товара, мы самостоятельно и за свой счёт заберём от вас данный товар.</p>
 						</div>
+					</div>
+					<div class="mobile__warranty mobile-plus">
+						<h2>Гарантия</h2>
+						<p>Информацию по всем вопросам, связанным с обменом, возвратом, ремонтом и взаимодействием с сервисным центром, вы можете уточнить непосредственно у сотрудников магазина или по телефону горячей линии.</p>
+						<button class="btn btn__dark btn__adaptive main__card_btn-warranty border">Гарантийные талоны<img src="./img/Icons/arrow.svg" alt="Смотреть"></button>
 					</div>
 					<div class="main__info_section main__info_feedback">
 						<h2>Обратная связь</h2>
-						<div class="main__info_description">
+						<div class="main__info_description main__">
 							<p>Если у вас есть предложения или замечания по работе интернет-магазина «Байк Центр», то вы всегда можете обратиться к нам:
 							</p>
 							<br>
@@ -541,7 +589,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="main__info_section main__info_how-to">
+					<div class="main__info_section main__info_how-to laptop-s-plus">
 						<h5>Не нашли то что нужно?</h5>
 						<div class="main__info_description">
 							<p>Позвоните нам по номеру 8 (800) 000000000
@@ -558,10 +606,10 @@
 				<div class="mobile__download">
 					<h4>Скачайте наше приложение</h4>
 					<div class="mobile__download_btns">
-						<button class="btn mobile__download_btn btn__grey border__small ">
+						<button class="btn mobile__download_btn btn__black border__small ">
 							<img src="./img/App_Store.svg" alt="App Store">
 						</button>
-						<button class="btn mobile__download_btn btn__grey border__small ">
+						<button class="btn mobile__download_btn btn__black border__small ">
 							<img src="./img/Google_Play.svg" alt="Google_Play">
 						</button>
 					</div>

@@ -444,6 +444,7 @@ body {
   transform: scale(1.03);
 }
 .footer {
+  position: relative;
   background-color: #0c1111;
   color: #ffffff;
   font-weight: 400;
@@ -666,6 +667,9 @@ body {
 .btn {
   cursor: pointer;
 }
+.btn__black {
+  background-color: #000000;
+}
 .btn__header {
   display: flex;
   justify-content: center;
@@ -771,9 +775,7 @@ body {
   gap: 16px;
 }
 .main__section_cards {
-  margin: 54px 8px 84px 0;
-  grid-template-columns: minmax(880px, auto) minmax(778px, 1fr);
-  gap: 16px;
+  margin: 21px 0px 28px 0;
 }
 .main__section_1 {
   grid-template-columns: repeat(2, 1fr);
@@ -849,6 +851,9 @@ body {
 .main__card_btn a {
   font-weight: 600;
 }
+.main__card_btn-warranty img {
+  padding-left: 24px;
+}
 .main__card_horisontal {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -871,16 +876,34 @@ body {
 .main__card_orange {
   background: linear-gradient(90deg, #ff8c00 0%, #ffbd00 100%);
 }
+.main__list {
+  padding-left: 26px;
+}
 .main__list_item {
-  list-style: disc;
+  position: relative;
+}
+.main__list_item::before {
+  content: "•";
+  position: absolute;
+  left: -16px;
 }
 .main__info {
   max-width: 1180px;
+}
+.main__info_how-to {
+  margin-top: 34px;
+}
+.main__info_how-to h2 {
+  margin-bottom: 28px;
 }
 .main__info_section {
   line-height: 24px;
   margin-bottom: 50px;
 }
+.main__info_feedback h2 {
+  margin-bottom: 28px;
+}
+
 .border {
   border-radius: 10px;
   overflow: hidden;
@@ -938,7 +961,7 @@ body {
   bottom: 0;
 }
 .mobile__card_help {
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 .mobile__card_help h2 {
   padding-right: 50px;
@@ -952,6 +975,48 @@ body {
 .mobile__card_help button {
   font-size: 14px;
 }
+.mobile__card_delivery-img {
+  position: relative;
+  max-width: 337px;
+  height: 87px;
+  margin-right: 15px;
+}
+.mobile__card_delivery-img img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  bottom: 0;
+}
+.mobile__card_bonus {
+  font-size: 14px;
+  line-height: 14px;
+  grid-template-columns: 1fr;
+  letter-spacing: 0.3px;
+}
+.mobile__card_bonus h2 {
+  margin: 2px 0 10px;
+}
+.mobile__card_bonus ul {
+  line-height: normal;
+}
+.mobile__card_paid {
+  margin-top: 12px;
+}
+.mobile__card_paid h2 {
+  margin-bottom: 16px;
+}
+.mobile__card_paid-links li {
+  position: relative;
+}
+.mobile__card_paid-links li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: #ececec;
+}
 .mobile__cart {
   margin-right: 16px;
   color: #ffffff;
@@ -963,9 +1028,6 @@ body {
 .mobile__search {
   margin-right: 10px;
   background-color: rgba(0, 0, 0, 0);
-}
-.mobile__footer {
-  position: relative;
 }
 .mobile__footer_help {
   margin-top: 38px;
@@ -984,16 +1046,16 @@ body {
   margin-top: 14px;
 }
 .mobile__delivery_title {
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
 .mobile__download {
   position: absolute;
   width: 100%;
-  top: -154px;
+  top: -135px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   padding: 20px 16px 30px;
-  background-color: red;
+  background-color: #333333;
 }
 .mobile__download h4 {
   font-family: "PT Sans", sans-serif;
@@ -1003,6 +1065,7 @@ body {
 }
 .mobile__download_btns {
   display: flex;
+  gap: 12px;
   justify-content: space-between;
   height: 43px;
 }
@@ -1102,6 +1165,20 @@ body {
   align-items: center;
   padding: 0 22px 14px 0;
 }
+.mobile__warranty {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2px;
+  margin-bottom: 36px;
+}
+.mobile__warranty h2 {
+  letter-spacing: 0.26px;
+  margin-bottom: 19px;
+}
+.mobile__warranty p {
+  line-height: 24px;
+  margin-bottom: 24px;
+}
 
 .mobile-plus {
   display: flex;
@@ -1141,6 +1218,19 @@ body {
   .header__top {
     display: none;
   }
+  .main__card_orange {
+    color: #ffffff;
+    padding: 21px 23px 32px;
+  }
+  .main__card_orange h2 {
+    font-size: 20px;
+  }
+  .main__card_orange p {
+    font-size: 14px;
+  }
+  .main__info_section {
+    margin-bottom: 36px;
+  }
   .main__title {
     padding-left: 0;
     margin-bottom: 26px;
@@ -1151,6 +1241,9 @@ body {
   .main__title h3 {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
+  }
+  .main__section {
+    gap: 20px;
   }
   .main .order {
     order: 1;
@@ -1176,6 +1269,22 @@ body {
 @media screen and (max-width: 1023px) {
   .laptop-s-plus {
     display: none;
+  }
+  .mobile__card_return {
+    margin: 56px 0 55px;
+    background: linear-gradient(90deg, #e2e6eb 0%, #f3f1f5 69.93%);
+    border-radius: 20px;
+    padding: 0 24px 32px 15px;
+  }
+  .mobile__card_return p {
+    margin-bottom: -12px;
+  }
+  .mobile__card_return-img {
+    position: relative;
+    transform: translateX(-62%);
+    top: -28px;
+    left: 50%;
+    margin-bottom: -16px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -1233,5 +1342,8 @@ body {
   .container {
     max-width: 1744px;
     padding: 0 32px;
+  }
+  .main__section_cards {
+    grid-template-columns: minmax(auto, 880px) minmax(586px, 1fr);
   }
 }
