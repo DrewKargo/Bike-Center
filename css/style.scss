@@ -195,6 +195,160 @@ body {
 		height: 50px;
 	}
 }
+.card {
+	width: 100%;
+	height: 100%;
+	//padding: 25px 48px;
+	background: $gradientGrey;
+
+	&__sec1 {
+	}
+
+	&__help {
+		display: flex;
+		flex-direction: column;
+
+		position: relative;
+		& h2 {
+			font-weight: 700;
+			font-size: 24px;
+			letter-spacing: 0.24px;
+		}
+		&_img {
+			position: absolute;
+			top: -25px;
+			left: 88px;
+		}
+	}
+	&__delivery-mobile {
+		padding: 30px;
+	}
+	&__bonus-mobile {
+	}
+
+	&__paid {
+		position: relative;
+		padding-top: 39px;
+		& h2 {
+			margin-left: -3px;
+		}
+	}
+	&__paid-img {
+		position: absolute;
+		top: -38px;
+		right: 10px;
+	}
+	&__paid-links {
+		margin-top: 32px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+	&__paid-link {
+		margin-left: -3px;
+		font-size: 14px;
+		line-height: 24px;
+		font-weight: 600;
+		letter-spacing: 0.14px;
+		text-decoration: underline;
+		& a {
+			color: $darkGrey;
+		}
+	}
+	&__return {
+	}
+
+	&__x2 {
+		grid-column: auto/span 2;
+	}
+	&__adaptive {
+		display: grid;
+		align-items: end;
+		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	}
+	&__btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 14px;
+		width: 216px;
+		& a {
+			font-weight: 600;
+		}
+	}
+	&__btn-warranty {
+		& img {
+			padding-left: 24px;
+		}
+	}
+	&__horisontal {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	&__img {
+		position: relative;
+		max-width: 337px;
+		height: 87px;
+		margin-right: 15px;
+		& img {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 100%;
+			bottom: 0;
+		}
+	}
+	&__info {
+		position: relative;
+		line-height: 24px;
+		z-index: 1;
+	}
+
+	&__orange {
+		background: $gradientOrange;
+	}
+	&__bonus {
+		display: grid;
+		grid-template-columns: max-content 1fr;
+
+		&_img-box {
+			position: relative;
+		}
+
+		&_img-1,
+		&_img-2,
+		&_img-3,
+		&_img-4 {
+			position: absolute;
+			z-index: 0;
+		}
+		&_img-main {
+			display: flex;
+			margin-left: auto;
+			position: relative;
+			top: -16px;
+			right: 50px;
+		}
+		&_img-1 {
+			top: 19px;
+			right: -11px;
+		}
+		&_img-2 {
+			top: 54px;
+			right: 190px;
+		}
+		&_img-3 {
+			right: 218px;
+			top: -46px;
+		}
+		&_img-4 {
+			right: 10px;
+			top: 47px;
+		}
+	}
+
+	&__warranty {
+	}
+}
 .main {
 	flex: 1 1 auto;
 	background-color: $white;
@@ -221,7 +375,7 @@ body {
 		}
 	}
 	&__title {
-		margin: 32px 0 50px 0;
+		margin: 32px 0 54px 0;
 		padding-left: 6px;
 		display: flex;
 		flex-wrap: wrap;
@@ -256,7 +410,7 @@ body {
 		gap: 16px;
 
 		&_cards {
-			margin: 21px 0px 28px 0;
+			margin: 24px 0px 28px 0;
 		}
 		&_1 {
 			grid-template-columns: repeat(2, 1fr);
@@ -264,113 +418,7 @@ body {
 		&_2 {
 		}
 	}
-	&__card {
-		width: 100%;
-		height: 100%;
-		padding: 25px 48px;
-		background: $gradientGrey;
 
-		&_help {
-			display: flex;
-			flex-direction: column;
-
-			position: relative;
-			& h2 {
-				font-weight: 700;
-				font-size: 24px;
-				letter-spacing: 0.24px;
-			}
-			&_img {
-				position: absolute;
-				top: -25px;
-				left: 88px;
-			}
-		}
-		&_delivery-mobile {
-			padding: 30px;
-		}
-		&_bonus-mobile {
-		}
-
-		&_paid {
-			position: relative;
-			padding-top: 39px;
-			& h2 {
-				margin-left: -3px;
-			}
-		}
-		&_paid-img {
-			position: absolute;
-			top: -38px;
-			right: 10px;
-		}
-		&_paid-links {
-			margin-top: 32px;
-			display: flex;
-			flex-direction: column;
-			gap: 20px;
-		}
-		&_paid-link {
-			margin-left: -3px;
-			font-size: 14px;
-			line-height: 24px;
-			font-weight: 600;
-			letter-spacing: 0.14px;
-			text-decoration: underline;
-			& a {
-				color: $darkGrey;
-			}
-		}
-		&_return {
-		}
-
-		&_x2 {
-			grid-column: auto/span 2;
-		}
-		&_adaptive {
-			display: grid;
-			align-items: end;
-			grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-		}
-		&_btn {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			font-size: 14px;
-			width: 216px;
-			& a {
-				font-weight: 600;
-			}
-		}
-		&_btn-warranty {
-			& img {
-				padding-left: 24px;
-			}
-		}
-		&_horisontal {
-			grid-template-columns: repeat(2, 1fr);
-		}
-		&_img {
-			position: relative;
-			max-width: 337px;
-			height: 87px;
-			margin-right: 15px;
-			& img {
-				position: absolute;
-				left: 50%;
-				transform: translateX(-50%);
-				width: 100%;
-				bottom: 0;
-			}
-		}
-		&_info {
-			line-height: 24px;
-		}
-
-		&_orange {
-			background: $gradientOrange;
-		}
-	}
 	&__list {
 		padding-left: 26px;
 
@@ -576,6 +624,9 @@ body {
 	}
 	&__download {
 		position: absolute;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 		width: 100%;
 		top: -135px;
 		border-top-left-radius: 10px;
@@ -583,6 +634,7 @@ body {
 		padding: 20px 16px 30px;
 		background-color: $darkGrey;
 		& h4 {
+			margin: 0 auto;
 			font-family: "PT Sans", sans-serif;
 			font-weight: 700;
 			font-size: 16px;
@@ -591,11 +643,12 @@ body {
 		&_btns {
 			display: flex;
 			gap: 12px;
-			justify-content: space-between;
+			justify-content: center;
 			height: 43px;
 		}
 		&_btn {
-			width: 165px;
+			max-width: 200px;
+			flex: 1 1 auto;
 			height: 100%;
 		}
 	}
@@ -751,19 +804,19 @@ body {
 			display: none;
 		}
 	}
-	.main {
-		&__card {
-			&_orange {
-				color: $white;
-				padding: 21px 23px 32px;
-				& h2 {
-					font-size: 20px;
-				}
-				& p {
-					font-size: 14px;
-				}
+	.card {
+		&__orange {
+			color: $white;
+			padding: 21px 23px 32px;
+			& h2 {
+				font-size: 20px;
+			}
+			& p {
+				font-size: 14px;
 			}
 		}
+	}
+	.main {
 		&__info {
 			&_section {
 				margin-bottom: 36px;
@@ -809,6 +862,13 @@ body {
 @media screen and (max-width: 1023px) {
 	.laptop-s-plus {
 		display: none;
+	}
+	.main {
+		&__section {
+			&_cards {
+				margin: 21px 0px 28px 0;
+			}
+		}
 	}
 	.mobile {
 		&__card {
