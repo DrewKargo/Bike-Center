@@ -503,6 +503,7 @@ body {
   margin-left: auto;
 }
 .footer__block_address {
+  margin-top: 26px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -930,6 +931,12 @@ body {
 }
 .main__info_how-to h2 {
   margin-bottom: 28px;
+}
+.main__info_description span {
+  display: initial;
+}
+.main__info_description p {
+  margin: 16px 0;
 }
 .main__info_section {
   line-height: 24px;

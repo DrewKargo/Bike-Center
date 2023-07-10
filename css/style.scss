@@ -434,7 +434,13 @@ body {
 			}
 		}
 		&_description {
+			& span {
+				display: initial;
+			}
 			& h2 {
+			}
+			& p {
+				margin: 16px 0;
 			}
 		}
 		&_return {
