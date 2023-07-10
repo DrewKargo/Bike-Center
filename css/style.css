@@ -598,6 +598,13 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.actions__action:hover img {
+  transform: translateY(2px);
+  transition: 0.3s;
+}
+.actions__action:active img {
+  transform: scale(0.8);
+}
 .actions__cart-quantity {
   position: absolute;
   top: -5px;
