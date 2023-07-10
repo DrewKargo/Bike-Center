@@ -41,6 +41,7 @@
 	&__block {
 		font-style: normal;
 		&_right {
+			display: grid;
 			margin-left: auto;
 		}
 		&_address {
@@ -93,6 +94,7 @@
 		flex-direction: column;
 	}
 	&__follow {
+		grid-column: auto/span 2;
 		margin: auto 4px 0 0;
 		gap: 10px;
 		& a {
@@ -102,16 +104,7 @@
 			overflow: hidden;
 		}
 	}
-	&__copyright {
-		border-top: 1px solid $darkGrey;
-		padding: 18px 0 20px;
-		& p {
-			line-height: 16px;
-			font-size: 14px;
-			color: #828282;
-			margin-bottom: 4px;
-		}
-	}
+
 	.subscribe {
 		&__container {
 			width: 672px;

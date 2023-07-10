@@ -85,14 +85,19 @@
 			width: 16px;
 			height: 2px;
 			left: -5px;
-
+			transition: 0.3s;
 			border-radius: 100%;
 			background-color: $white;
 		}
 		& span::after {
 			bottom: 0;
 		}
-		&_tablet {
+		&:active span::before {
+			transform: translateY(3px);
+		}
+		&:active span::after {
+			transform: translateY(3px);
+			transition-delay: 150ms;
 		}
 	}
 	&__links {
