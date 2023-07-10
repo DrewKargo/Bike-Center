@@ -69,9 +69,8 @@
 		margin-left: 83px;
 		font-weight: 700;
 		transition: 0.5s ease;
-		&:hover span {
-			transform: scale(1.5);
-		}
+		background-color: $dark;
+		color: $white;
 
 		& span {
 			position: relative;
@@ -101,22 +100,26 @@
 		position: relative;
 		height: 16px;
 		overflow: hidden;
-
-		gap: 26px;
+		gap: 29px;
 		&_wrap {
 			flex-wrap: wrap;
 		}
 		&_right {
 			padding-left: 16px;
 			flex: none;
+			margin: 0 4px 0 auto;
 		}
 	}
 	&__link {
+		display: flex;
 		position: relative;
 		overflow: hidden;
 		color: $dark;
 		height: 16px;
 		line-height: 16px;
+		&_red {
+			color: $red;
+		}
 		&:hover span {
 			transform: translateY(100%);
 		}
@@ -130,7 +133,6 @@
 		}
 		&::before {
 			content: attr(data-title);
-			padding: 2px 0;
 			position: absolute;
 			bottom: 100%;
 			left: 0;
@@ -145,7 +147,6 @@
 		height: 60px;
 		display: flex;
 		align-items: center;
-		margin: 0 -4px;
 	}
 	&__search {
 		border-radius: 10px;
@@ -155,11 +156,12 @@
 		border: 1px solid $grey;
 		background-color: $grey;
 		margin: 0 16px;
-		// &:hover,
-		// :active {
-		// 	border: 1px solid $darkGrey;
-		// 	background-color: $darkGrey;
-		// }
+		transition: 0.3s;
+		&:hover,
+		:focus {
+			border: 1px solid $darkGrey;
+			background-color: $darkGrey;
+		}
 	}
 	&__actions {
 		display: flex;
@@ -179,7 +181,14 @@
 		&:hover,
 		:active,
 		:focus {
-			border: 1px solid #27ae60;
+			border: 1px solid $green;
+		}
+		&_out {
+			&:hover,
+			:active,
+			:focus {
+				border: 1px solid $red;
+			}
 		}
 	}
 	.sign-in {
@@ -209,7 +218,7 @@
 				line-height: 16px;
 				left: 36px;
 			}
-			&__false {
+			&_false {
 				transform: translateX(54px);
 			}
 		}
@@ -232,15 +241,17 @@
 		width: 100%;
 		font-size: 14px;
 		padding-left: 27px;
-		background-color: none;
+		background-color: #fff;
 		&:hover,
-		:focus,
-		:active {
+		&:active,
+		&:focus {
 			background-color: #fff;
 		}
 	}
 
 	&__btn {
+		justify-content: center;
+		align-items: center !important;
 		width: 98px;
 		background-color: #ffffff00;
 	}

@@ -6,7 +6,8 @@ $dark: #0c1111;
 $darkGrey: #333333;
 $grey: #e0e0e0;
 $white: #ffffff;
-$red: #ea5455;
+$red: #f66;
+$green: #27ae60;
 $gradientGrey: linear-gradient(90deg, #e2e6eb 0%, #f3f1f5 69.93%);
 $gradientOrange: linear-gradient(90deg, #ff8c00 0%, #ffbd00 100%);
 h1 {
@@ -53,9 +54,10 @@ body {
 	display: flex;
 	gap: 18px;
 	margin-left: 26px;
-	padding: 0 2px 0 0;
+	padding: 8px 2px 0 0;
 
 	&__action {
+		cursor: pointer;
 		position: relative;
 		display: flex;
 		flex-direction: column;
@@ -172,11 +174,13 @@ body {
 		font-weight: 600;
 		background-color: $dark;
 		color: $white;
+		transition: 0.3s;
+		&:hover {
+			background-color: $green;
+			color: $dark;
+		}
 	}
-	&__fix {
-		width: 216px;
-		height: 50px;
-	}
+
 	&__adaptive {
 		display: flex;
 		width: 100%;
@@ -196,12 +200,11 @@ body {
 	}
 }
 .card {
-	width: 100%;
-	height: 100%;
-	//padding: 25px 48px;
 	background: $gradientGrey;
 
-	&__sec1 {
+	&__sec2 {
+		padding: 26px 47px 25px 55px;
+		background: linear-gradient(270deg, #e2e6eb 0%, #f3f1f5 69.93%);
 	}
 
 	&__help {
@@ -220,15 +223,11 @@ body {
 			left: 88px;
 		}
 	}
-	&__delivery-mobile {
-		padding: 30px;
-	}
-	&__bonus-mobile {
-	}
 
 	&__paid {
 		position: relative;
 		padding-top: 39px;
+
 		& h2 {
 			margin-left: -3px;
 		}
@@ -239,43 +238,26 @@ body {
 		right: 10px;
 	}
 	&__paid-links {
-		margin-top: 32px;
-		display: flex;
-		flex-direction: column;
-		gap: 20px;
 	}
 	&__paid-link {
-		margin-left: -3px;
-		font-size: 14px;
-		line-height: 24px;
-		font-weight: 600;
-		letter-spacing: 0.14px;
-		text-decoration: underline;
 		& a {
-			color: $darkGrey;
+			color: $dark;
 		}
 	}
 	&__return {
+		padding-top: 33px;
+		&_img {
+			position: relative;
+		}
 	}
 
-	&__x2 {
-		grid-column: auto/span 2;
-	}
 	&__adaptive {
 		display: grid;
 		align-items: end;
-		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+		height: 100%;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	}
-	&__btn {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		font-size: 14px;
-		width: 216px;
-		& a {
-			font-weight: 600;
-		}
-	}
+
 	&__btn-warranty {
 		& img {
 			padding-left: 24px;
@@ -299,18 +281,24 @@ body {
 	}
 	&__info {
 		position: relative;
+		font-size: 16px;
 		line-height: 24px;
 		z-index: 1;
+		& p {
+			margin: 4px 0 16px;
+		}
 	}
 
 	&__orange {
 		background: $gradientOrange;
+		color: $white;
 	}
 	&__bonus {
 		display: grid;
 		grid-template-columns: max-content 1fr;
 
 		&_img-box {
+			display: none;
 			position: relative;
 		}
 
@@ -326,23 +314,23 @@ body {
 			margin-left: auto;
 			position: relative;
 			top: -16px;
-			right: 50px;
+			right: 43px;
 		}
 		&_img-1 {
-			top: 19px;
-			right: -11px;
+			top: 18px;
+			right: -18px;
 		}
 		&_img-2 {
-			top: 54px;
-			right: 190px;
+			top: 53px;
+			right: 183px;
 		}
 		&_img-3 {
-			right: 218px;
-			top: -46px;
+			right: 211px;
+			top: -47px;
 		}
 		&_img-4 {
-			right: 10px;
-			top: 47px;
+			right: 3px;
+			top: 46px;
 		}
 	}
 
@@ -440,12 +428,14 @@ body {
 	&__info {
 		max-width: 1180px;
 		&_how-to {
-			margin-top: 34px;
+			margin-top: 36px;
 			& h2 {
 				margin-bottom: 28px;
 			}
 		}
 		&_description {
+			& h2 {
+			}
 		}
 		&_return {
 		}
@@ -487,13 +477,12 @@ body {
 		flex: none;
 		position: relative;
 		background-color: #ffffff00;
-		overflow: hidden;
 
-		&:hover span::before {
-			transform: rotate(45deg);
+		&:active span::before {
+			transform: translateY(5px);
 		}
-		&:hover span::after {
-			transform: rotate(135deg);
+		&:active span::after {
+			transform: translateY(-5px);
 		}
 		& span,
 		span::before,
@@ -502,9 +491,9 @@ body {
 			height: 3px;
 			background-color: $black;
 			border-radius: 2px;
+			transition: 0.3s;
 		}
-		& span {
-		}
+
 		& span::before,
 		span::after {
 			content: "";
@@ -535,21 +524,7 @@ body {
 				font-size: 14px;
 			}
 		}
-		&_delivery {
-		}
-		&_delivery-img {
-			position: relative;
-			max-width: 337px;
-			height: 87px;
-			margin-right: 15px;
-			& img {
-				position: absolute;
-				left: 50%;
-				transform: translateX(-50%);
-				width: 100%;
-				bottom: 0;
-			}
-		}
+
 		&_bonus {
 			font-size: 14px;
 			line-height: 14px;
@@ -573,14 +548,6 @@ body {
 			& li {
 				position: relative;
 			}
-			& li::after {
-				content: "";
-				position: absolute;
-				bottom: 0;
-				width: 100%;
-				height: 1px;
-				background: #ececec;
-			}
 		}
 		&_return {
 		}
@@ -603,6 +570,7 @@ body {
 	&__footer {
 		&_help {
 			margin-top: 38px;
+			padding-bottom: 16px !important;
 			border-bottom: 1px solid $darkGrey;
 
 			& h4 {
@@ -617,21 +585,23 @@ body {
 		}
 		&_navigations {
 			margin-top: 14px;
+			& li {
+				height: 48px;
+			}
 		}
 	}
 	&__delivery_title {
 		margin-bottom: 36px;
 	}
 	&__download {
-		position: absolute;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		width: 100%;
-		top: -135px;
 		border-top-left-radius: 10px;
 		border-top-right-radius: 10px;
 		padding: 20px 16px 30px;
+		margin-top: 100px;
 		background-color: $darkGrey;
 		& h4 {
 			margin: 0 auto;
@@ -672,23 +642,26 @@ body {
 		&_btn {
 			font-size: 14px;
 			margin-top: 24px;
+			height: 50px !important;
 		}
 	}
 	&__links {
-		display: flex;
-		flex-direction: column;
-		padding: 0 2px;
 	}
 	&__link {
+		position: relative;
 		height: 50px;
 		display: flex;
 		align-items: center;
-
+		& li::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 1px;
+			background: #ececec;
+		}
 		&_img {
-			display: flex;
-			height: 18px;
-			width: 18px;
-			margin-right: 18px;
+			margin-right: 16px;
 		}
 		&_br {
 			border-bottom: 2px solid $darkGrey;
@@ -703,7 +676,7 @@ body {
 		&_form {
 			position: relative;
 			display: flex;
-			margin: 16px 0;
+			margin: 13px 0 16px;
 			width: 100%;
 			height: 37px;
 			border: 1px solid #4f4f4f;
@@ -776,11 +749,42 @@ body {
 }
 
 @media screen and (max-width: 599px) {
+	.actions {
+		margin: 0px -2px;
+	}
 	.container {
 		padding: 0 20px;
 	}
+	.header {
+		&__basic {
+			background-color: $black;
+		}
+	}
+	.mobile {
+		&__burger {
+			& span {
+				background-color: $white;
+				&::after,
+				&::before {
+					background-color: $white;
+				}
+			}
+		}
+	}
 	.order-1 {
 		order: -1;
+	}
+	.svg-color {
+		color: $white;
+	}
+	.card {
+		&__delivery {
+			&_title {
+				position: absolute;
+				top: -199px;
+				left: -30px;
+			}
+		}
 	}
 }
 @media screen and (min-width: 600px) {
@@ -789,6 +793,13 @@ body {
 	}
 	.container {
 		padding: 0 24px;
+	}
+	.card__bonus_img-box {
+		display: block;
+		position: relative;
+	}
+	.svg-color {
+		color: $dark;
 	}
 }
 @media screen and (max-width: 767px) {
@@ -805,14 +816,61 @@ body {
 		}
 	}
 	.card {
+		&__adaptive {
+			gap: 0 !important;
+		}
+		&__help {
+			& h2 {
+				margin-right: 26px;
+			}
+		}
+		&__info {
+			& h2 {
+				line-height: 26px;
+			}
+			& p {
+			}
+		}
 		&__orange {
+			order: 2;
 			color: $white;
 			padding: 21px 23px 32px;
+			& ul {
+				padding: 10px 0 0 16px;
+				font-size: 14px;
+				line-height: normal;
+			}
 			& h2 {
 				font-size: 20px;
 			}
 			& p {
 				font-size: 14px;
+			}
+		}
+		&__paid {
+			padding-top: 12px;
+			order: 3;
+			& h2 {
+				margin-bottom: 16px;
+			}
+		}
+		&__delivery {
+			margin-top: 94px;
+
+			& p {
+				margin: 8px 0 16px;
+			}
+		}
+		&__delivery_img {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			height: 87px;
+			margin-right: 15px;
+			& img {
+				position: absolute;
+				max-width: 100%;
+				bottom: 0;
 			}
 		}
 	}
@@ -821,6 +879,8 @@ body {
 			&_section {
 				margin-bottom: 36px;
 			}
+		}
+		&__list {
 		}
 		&__title {
 			padding-left: 0;
@@ -844,8 +904,26 @@ body {
 	.tablet-plus {
 		display: none;
 	}
+	.main__section_cards {
+		grid-template-columns: auto;
+		grid-template-rows: auto;
+	}
 }
 @media screen and (min-width: 768px) {
+	.card {
+		&__info {
+			font-size: 14px;
+			& h2 {
+			}
+		}
+		&__paid {
+			padding-top: 24px !important;
+		}
+		&__sec1 {
+			background: $gradientGrey;
+			padding: 0 49px 25px 49px;
+		}
+	}
 	.mobile {
 		display: none;
 		&__cart {
@@ -858,10 +936,51 @@ body {
 	.tablet-plus {
 		display: inherit;
 	}
+	.main__section_cards {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+	}
 }
 @media screen and (max-width: 1023px) {
 	.laptop-s-plus {
 		display: none;
+	}
+	.card {
+		&__help {
+			background: none;
+		}
+
+		&__paid-link {
+			position: relative;
+			height: 50px;
+			display: flex;
+			align-items: center;
+
+			&_img {
+				display: flex;
+				height: 18px;
+				width: 18px;
+				margin-right: 18px;
+			}
+			&::after {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				height: 1px;
+				background: #ececec;
+			}
+		}
+		&__paid-links {
+			display: flex;
+			flex-direction: column;
+			padding: 0 2px;
+		}
+
+		&__delivery {
+			order: 1;
+			padding: 30px;
+		}
 	}
 	.main {
 		&__section {
@@ -892,6 +1011,116 @@ body {
 	}
 }
 @media screen and (min-width: 1024px) {
+	.btn__fix {
+		height: 50px;
+		width: 216px;
+		margin: 0;
+	}
+	.card {
+		&__bonus {
+			& h2 {
+				margin: 13px 0 12px 2px;
+			}
+			& ul {
+				line-height: normal;
+			}
+		}
+		&__help,
+		&__paid {
+			grid-row: auto/span 2;
+		}
+		&__help {
+			p {
+				margin-top: 12px;
+			}
+		}
+		&__paid {
+			padding-top: 40px !important;
+		}
+		&__paid-link {
+			margin-left: -3px;
+			font-size: 14px;
+			line-height: 24px;
+			font-weight: 600;
+			letter-spacing: 0.14px;
+			text-decoration: underline;
+			& a {
+				color: $darkGrey;
+			}
+		}
+		&__paid-links {
+			margin-top: 32px;
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+		}
+		&__return {
+			& p {
+				margin: 18px 0 25px;
+			}
+			&_img {
+				position: relative;
+				display: flex;
+				justify-content: center;
+				margin-right: 15px;
+				order: -1;
+				height: 100%;
+			}
+		}
+		&__warranty {
+			&_img {
+				position: relative;
+				display: flex;
+				justify-content: center;
+				margin-right: 15px;
+				height: 100%;
+			}
+			& button {
+				margin: auto 0 auto auto;
+				max-width: 266px;
+				margin-bottom: 28px;
+			}
+			& p {
+				margin-top: 10px;
+			}
+		}
+		&__delivery {
+			padding: 27px 47px 25px 55px;
+			justify-items: center;
+			&_img {
+				position: relative;
+				display: flex;
+				justify-content: center;
+				height: 100%;
+				order: -1;
+				& img {
+					position: absolute;
+					max-height: 185px;
+					top: -6px;
+					max-width: 337px;
+				}
+			}
+			& h2 {
+			}
+			& p {
+				margin: 18px 0 25px;
+			}
+		}
+	}
+	.main {
+		&__section {
+			&_cards {
+				padding-right: 8px;
+			}
+		}
+		&__info {
+			&_section {
+				& h2 {
+					margin-bottom: 28px;
+				}
+			}
+		}
+	}
 	.mobile__footer {
 		display: none;
 	}
@@ -910,6 +1139,10 @@ body {
 	.container {
 		max-width: 1744px;
 		padding: 0 32px;
+	}
+	.main__section_cards {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
 	}
 }
 @media screen and (max-width: 1279px) {
@@ -947,7 +1180,28 @@ body {
 		max-width: 1744px;
 		padding: 0 32px;
 	}
+	.card {
+		&__x2 {
+			grid-column: auto/span 2;
+		}
+		&__return {
+			&_img {
+				order: 0;
+				& img {
+					position: absolute;
+					top: -17px;
+					left: 48px;
+				}
+			}
+		}
+		&__delivery {
+			&_img {
+				order: 0;
+			}
+		}
+	}
 	.main__section_cards {
-		grid-template-columns: minmax(auto, 880px) minmax(586px, 1fr);
+		grid-template-columns: repeat(2, minmax(370px, 431px)) minmax(630px, 1fr);
+		grid-template-rows: 173px 136px 1fr;
 	}
 }
