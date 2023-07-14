@@ -482,9 +482,9 @@ body {
 .menu {
 	overflow: auto;
 	display: none;
+	position: fixed;
 	flex-direction: column;
 	overflow: auto;
-	position: relative;
 	height: 100vh;
 	width: 100%;
 	background-color: $white;
@@ -1045,6 +1045,7 @@ body {
 		}
 	}
 	.menu {
+		top: 44px;
 		&__subcategories {
 			display: none !important;
 		}
@@ -1140,6 +1141,7 @@ body {
 	}
 
 	.menu {
+		top: 129px;
 		&__navigations {
 			margin-bottom: 129px;
 			gap: 50px;

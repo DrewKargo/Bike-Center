@@ -984,9 +984,9 @@ body ::-webkit-scrollbar-thumb {
 .menu {
   overflow: auto;
   display: none;
+  position: fixed;
   flex-direction: column;
   overflow: auto;
-  position: relative;
   height: 100vh;
   width: 100%;
   background-color: #ffffff;
@@ -1495,6 +1495,9 @@ body ::-webkit-scrollbar-thumb {
     max-width: 100%;
     bottom: 0;
   }
+  .menu {
+    top: 44px;
+  }
   .menu__subcategories {
     display: none !important;
   }
@@ -1573,6 +1576,9 @@ body ::-webkit-scrollbar-thumb {
   .header__basic {
     border-bottom: 1px solid #f2f2f2;
     box-shadow: 0 2px 15px #f2f2f2;
+  }
+  .menu {
+    top: 129px;
   }
   .menu__navigations {
     margin-bottom: 129px;
