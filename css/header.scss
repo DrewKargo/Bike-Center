@@ -42,8 +42,6 @@
 
 	&__basic {
 		height: 92px;
-		border-bottom: 1px solid #f2f2f2;
-		box-shadow: 0 2px 15px #f2f2f2;
 		z-index: 99;
 
 		&_container {
@@ -61,45 +59,65 @@
 	}
 	&__burger {
 		display: flex;
-		flex: none;
-		justify-content: center;
+		order: -1;
 		align-items: center;
-		width: 147px;
-		height: 40px;
-		margin-left: 83px;
-		font-weight: 700;
-		transition: 0.5s ease;
-		background-color: $dark;
-		color: $white;
+		width: 32px;
+		height: 22px;
+		margin-right: 23px;
+		flex: none;
+		position: relative;
+		background-color: #ffffff00;
 
-		& span {
-			position: relative;
-			width: 10px;
-			height: 9px;
-			margin-right: 8px;
+		&:active span::before {
+			transform: translateY(5px);
 		}
+		&:active span::after {
+			transform: translateY(-5px);
+		}
+		& span,
+		span::before,
+		span::after {
+			width: 100%;
+			height: 3px;
+			background-color: $black;
+			border-radius: 2px;
+			transition: 0.3s;
+		}
+
 		& span::before,
 		span::after {
 			content: "";
 			position: absolute;
-			width: 16px;
-			height: 2px;
-			left: -5px;
-			transition: 0.3s;
-			border-radius: 100%;
-			background-color: $white;
+			left: 0;
+			right: 0;
+		}
+		& span::before {
+			top: 0;
 		}
 		& span::after {
 			bottom: 0;
 		}
-		&:active span::before {
-			transform: translateY(3px);
-		}
-		&:active span::after {
-			transform: translateY(3px);
-			transition-delay: 150ms;
+		&_close {
+			margin: 0 27px 0 -4px;
+			& span {
+				background-color: #ffffff00 !important;
+			}
+			& span::before,
+			span::after {
+				padding-left: 2px;
+				background-color: #f84445 !important;
+			}
+			& span::after {
+				transform: rotate(-135deg);
+				bottom: 10px;
+			}
+			& span::before {
+				transform: rotate(135deg);
+				top: 9px;
+			}
 		}
 	}
+
 	&__links {
 		display: flex;
 		position: relative;
@@ -149,7 +167,7 @@
 		}
 	}
 	&__panel {
-		height: 60px;
+		height: 44px;
 		display: flex;
 		align-items: center;
 	}
@@ -174,6 +192,7 @@
 	&__sign-in {
 		width: 100px;
 		height: 40px;
+		margin-right: 16px;
 		background-color: #f2f3f5;
 		display: flex;
 		align-items: center;
@@ -327,8 +346,6 @@
 			margin-bottom: 6px;
 		}
 	}
-	&__products {
-	}
 
 	&__product {
 		display: flex;
@@ -358,8 +375,5 @@
 			transition: all 0.3s ease-out;
 			transform: scale(1.03);
 		}
-	}
-
-	.right {
 	}
 }

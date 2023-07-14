@@ -7,7 +7,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="https://bike-centre.ru/favicon.ico">
 	<link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body class="body">
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__top">
@@ -60,9 +60,6 @@
 			<div class="header__basic">
 				<div class="header__basic_container container">
 					<div class="header__panel">
-						<button class="mobile__burger mobile-plus">
-							<span></span>
-						</button>
 						<svg width="195" height="40" class="header__logo svg-color" viewBox="0 0 195 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M74.512 9.72729H55.2952L53.2009 31.193L72.3782 31.2061L72.9841 25.3174H61.4329L62.3944 15.5768H66.2668L63.514 23.411L71.1928 23.4372L73.9324 15.616L74.512 9.72729Z" fill="currentColor"/>
 							<path d="M31.8861 31.2193L34.3623 5.79731L32.4261 5.78426L32.9793 0H42.647L40.9084 17.627L45.5052 9.72747L53.2235 9.71442L48.5214 17.5486L52.4464 17.5225L50.3127 39.0666H42.6207L44.1749 23.4373H40.2235L39.4859 31.2193H31.8861Z" fill="currentColor"/>
@@ -70,9 +67,9 @@
 							<path d="M0.804321 31.2193L3.28051 5.79732L1.29166 5.78426L1.85802 0H11.552L9.03634 25.3828H12.8823L13.8438 15.6162H11.9208L12.474 9.71442H22.089L19.9816 31.2193H0.804321Z" fill="currentColor"/>
 							<path fill-rule="evenodd" clip-rule="evenodd" d="M0.632219 32.4466L41.2128 32.5249L40.6201 39.2493L0 39.1709L0.632219 32.4335V32.4466ZM195 9.93627H175.757L173.649 31.4412H181.289L182.856 15.7728H186.689L186.307 19.6899H194.025L195 9.85793V9.93627ZM173.663 9.93627L173.083 15.825L170.33 23.6592H162.665L165.417 15.825H161.545L160.584 25.5655H172.135L171.529 31.4542H152.352L154.446 10.0016L173.663 9.93627ZM138.693 31.4412H150.231L150.771 25.5786H146.925L147.887 15.8119H151.838L152.404 9.94933H148.453L148.822 6.03223H141.13L138.693 31.4412ZM138.693 9.9885L136.612 31.4673H128.946L130.474 15.7989H126.602L125.127 31.4673H117.514L119.555 9.9885H138.693ZM117.421 9.9885H98.231L96.1499 31.4412H115.327L115.907 25.5786H104.369L105.37 15.838H109.242L106.489 23.6723H114.168L116.921 15.838L117.501 9.94933L117.421 9.9885ZM96.1499 9.9885L95.3728 17.7444H87.6018L87.7994 15.8511H83.9797L82.9787 25.5786H86.8247L87.0355 23.607H94.767L93.9635 31.4412H74.7467L76.8804 9.9885H96.1499Z" fill="#E30613"/>
 						</svg>
-						<button class="header__burger border laptop-s-plus">
+						<button class="header__burger">
 							<span></span>
-							Каталог
+							<p class="laptop-s-plus">Каталог</p>
 						</button>
 						<div class="header__search tablet-plus">
 							<div class="search__container">
@@ -259,6 +256,27 @@
 									src="./img/Icons/person.svg" alt="Профиль">								
 								</span>
 							</button>
+							<button class="mobile__action mobile__search ">
+								<svg class="svg-color" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M7.99996 14.9999C11.8659 14.9999 14.9999 11.8659 14.9999 7.99996C14.9999 4.13399 11.8659 1 7.99996 1C4.13399 1 1 4.13399 1 7.99996C1 11.8659 4.13399 14.9999 7.99996 14.9999Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M12.9492 12.95L16.9992 17" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>		
+							</button>
+							<div class="mobile__actions">
+								<a href="#" class="mobile__action mobile">
+									<svg class="svg-color" width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M7.0954 16.9999C7.51619 16.9999 7.85731 16.6588 7.85731 16.238C7.85731 15.8172 7.51619 15.4761 7.0954 15.4761C6.67461 15.4761 6.3335 15.8172 6.3335 16.238C6.3335 16.6588 6.67461 16.9999 7.0954 16.9999Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M15.4763 16.9999C15.897 16.9999 16.2382 16.6588 16.2382 16.238C16.2382 15.8172 15.897 15.4761 15.4763 15.4761C15.0555 15.4761 14.7144 15.8172 14.7144 16.238C14.7144 16.6588 15.0555 16.9999 15.4763 16.9999Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M1 1H4.04762L6.08952 11.2019C6.1592 11.5527 6.35003 11.8678 6.62861 12.092C6.90719 12.3163 7.25577 12.4354 7.61333 12.4286H15.019C15.3766 12.4354 15.7252 12.3163 16.0038 12.092C16.2824 11.8678 16.4732 11.5527 16.5429 11.2019L17.7619 4.80952H4.80952" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+								<a href="#" class="mobile__action mobile">
+									<svg class="svg-color" width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M15.2222 17V15.2222C15.2222 14.2792 14.8476 13.3748 14.1808 12.708C13.514 12.0412 12.6097 11.6666 11.6667 11.6666H4.55556C3.61256 11.6666 2.70819 12.0412 2.0414 12.708C1.3746 13.3748 1 14.2792 1 15.2222V17" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M8.11122 8.11111C10.0749 8.11111 11.6668 6.51923 11.6668 4.55556C11.6668 2.59188 10.0749 1 8.11122 1C6.14754 1 4.55566 2.59188 4.55566 4.55556C4.55566 6.51923 6.14754 8.11111 8.11122 8.11111Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+							</div>
 							<ul class="actions">
 								<li class="actions__action laptop-m-plus">
 									<img class="actions__img"
@@ -280,20 +298,6 @@
 									<img class="actions__img"
 										src="./img/Icons/Cart.svg" alt="Корзина">
 									<span class="actions__title">Корзина</span>
-								</li>
-								<button class="mobile__search">
-									<svg width="22" height="22" class="svg-color" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M0 9.64602C0 4.37423 4.24769 -0.000244141 9.61319 -0.000244141C14.8669 -0.000244141 19.1146 4.37423 19.1146 9.64602C19.1146 12.0525 18.2295 14.2486 16.7677 15.9249C16.7685 15.9256 16.7694 15.9262 16.7703 15.9269L21.5769 20.1892C22.024 20.6379 22.1358 21.1987 21.6887 21.6474C21.3533 22.096 20.6827 22.096 20.2355 21.7595L15.4289 17.4972C15.3608 17.4459 15.303 17.3868 15.2552 17.3218C13.6782 18.49 11.7271 19.1801 9.61319 19.1801C4.35947 19.1801 0 14.9178 0 9.64602ZM1.7885 9.64602C1.7885 13.9083 5.25372 17.4976 9.61319 17.4976C13.8609 17.4976 17.3261 13.9083 17.4379 9.64602C17.4379 5.27155 13.9727 1.79441 9.61319 1.79441C5.25372 1.79441 1.7885 5.27155 1.7885 9.64602Z" fill="currentColor"/>
-									</svg>	
-								</button>
-								<li class="actions__action mobile__cart">
-									<span class="actions__cart-quantity border__small">1</span>
-									<svg width="25" height="23" class="svg-color" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path id="Vector" d="M10.072 22C10.7114 22 11.2299 21.4816 11.2299 20.8421C11.2299 20.2026 10.7114 19.6842 10.072 19.6842C9.43247 19.6842 8.91406 20.2026 8.91406 20.8421C8.91406 21.4816 9.43247 22 10.072 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										<path id="Vector_2" d="M20.4938 22C21.1333 22 21.6517 21.4816 21.6517 20.8421C21.6517 20.2026 21.1333 19.6842 20.4938 19.6842C19.8543 19.6842 19.3359 20.2026 19.3359 20.8421C19.3359 21.4816 19.8543 22 20.4938 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										<path id="Vector_3" d="M1.96875 1H5.96875L8.64875 14.39C8.74019 14.8504 8.99066 15.264 9.3563 15.5583C9.72193 15.8527 10.1794 16.009 10.6488 16H20.3687C20.8381 16.009 21.2956 15.8527 21.6612 15.5583C22.0268 15.264 22.2773 14.8504 22.3687 14.39L23.9688 6.00001H6.96875" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										
-									</svg>
 								</li>
 							</ul>
 						</div>
@@ -342,8 +346,5140 @@
 					</nav>
 				</div>
 			</div>
+			
 		</header>
+		<div class="menu">
+			<div class="menu__location-mobile mobile">
+				<p>Ваш город </p>
+				<div class="menu__location-mobile_city">
+					<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1 8.0487L16 1.20166L8.89474 15.6565L7.31579 9.57027L1 8.0487Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+					<a href="#" class="menu__location-mobile_link">Краснодар</a>
+				</div>
+			</div>
+			<div class="mobile menu__tabs-selector-mobile_container">
+				<div class="menu__tabs-selector-mobile border__large ">
+					<button id="mobile-catalog-btn" class="menu__tabs-selector-mobile_btn">Каталог</button>
+					<span class="menu__tabs-selector-mobile_toggle"></span>
+					<button id="mobile-brands-btn" class="menu__tabs-selector-mobile_btn">Бренды</button>
+				</div>
+			</div>
+			<div class="menu__navigations container">
+				<div class="menu__container">
+					<div class="menu__categories">
+						<ul class="menu__categories_items">
+							<li class="menu__categories_item menu__categories_item-active" onmouseover="openSubcategory(event, 'Bicycles')">
+								<a  class="menu__categories_link" href="#">
+									<img  class="menu__categories_img" src="./img/catalog-images/bicycles.png" alt="Категория">
+									<p>Велосипеды</p>
+									<div class="right">
+										<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path id="Vector" d="M0.590576 11L6.05041 6L0.590576 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</div>
+								</a>
+							</li>
+							<li class="menu__categories_item" onmouseover="openSubcategory(event, 'Electric-scooters')">
+								<a  class="menu__categories_link" href="#">
+									<img  class="menu__categories_img" src="./img/catalog-images/electric-scooters.png" alt="Категория">
+									<p>Электросамокаты</p>
+									<div class="right">
+										<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path id="Vector" d="M0.590576 11L6.05041 6L0.590576 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</div>
+								</a>
+							</li>
+							<li class="menu__categories_item" onmouseover="openSubcategory(event, 'Scooters')">
+								<a  class="menu__categories_link" href="#">
+									<img  class="menu__categories_img" src="./img/catalog-images/scooters.png" alt="Категория">
+									<p>Самокаты</p>
+									<div class="right">
+										<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path id="Vector" d="M0.590576 11L6.05041 6L0.590576 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</div>
+								</a>
+							</li>
+							<li class="menu__categories_item" onmouseover="openSubcategory(event, 'Skateboards')">
+								<a  class="menu__categories_link" href="#">
+									<img  class="menu__categories_img" src="./img/catalog-images/skateboards.png" alt="Категория">
+									<p>Скейтборды</p>
+									<div class="right">
+										<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path id="Vector" d="M0.590576 11L6.05041 6L0.590576 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</div>
+								</a>
+							</li>
+							<li class="menu__categories_item" onmouseover="openSubcategory(event, 'Roller-skates')">
+								<a  class="menu__categories_link" href="#">
+									<img  class="menu__categories_img" src="./img/catalog-images/roller-skates.png" alt="Категория">
+									<p>Роликовые коньки</p>
+									<div class="right">
+										<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path id="Vector" d="M0.590576 11L6.05041 6L0.590576 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</div>
+								</a>
+							</li>
+							<li class="menu__categories_item"  onmouseover="openSubcategory(event, 'Bike-accessiores')">
+								<a  class="menu__categories_link" href="#">
+									<img  class="menu__categories_img" src="./img/catalog-images/bicycle accessiores.png" alt="Категория">
+									<p>Велоаксессуары</p>
+									<div class="right">
+										<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path id="Vector" d="M0.590576 11L6.05041 6L0.590576 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</div>
+								</a>
+							</li>
+							<li class="menu__categories_item" onmouseover="openSubcategory(event, 'Bike-parts')">
+								<a  class="menu__categories_link" href="#">
+									<img  class="menu__categories_img" src="./img/catalog-images/bicycle-parts.png" alt="Категория">
+									<p>Велозапчасти</p>
+									<div class="right">
+										<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path id="Vector" d="M0.590576 11L6.05041 6L0.590576 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</div>
+								</a>
+							</li>
+							<li class="menu__categories_item" onmouseover="openSubcategory(event, 'Scooters-parts')">
+								<a  class="menu__categories_link" href="#">
+									<img  class="menu__categories_img" src="./img/catalog-images/scooters-parts.png" alt="Категория">
+									<p>Запчасти для самокатов</p>
+									<div class="right">
+										<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path id="Vector" d="M0.590576 11L6.05041 6L0.590576 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</div>
+								</a>
+							</li>
+							<li class="menu__categories_item" onmouseover="openSubcategory(event, 'Skis')">
+								<a  class="menu__categories_link" href="#">
+									<img  class="menu__categories_img" src="./img/catalog-images/skis.png" alt="Категория">
+									<p>Лыжи</p>
+									<div class="right">
+										<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path id="Vector" d="M0.590576 11L6.05041 6L0.590576 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</div>
+								</a>
+							</li>
+							<li class="menu__categories_item" onmouseover="openSubcategory(event, 'Snowboards')">
+								<a  class="menu__categories_link" href="#">
+									<img  class="menu__categories_img" src="./img/catalog-images/snowboards.png" alt="Категория">
+									<p>Сноуборды</p>
+									<div class="right">
+										<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path id="Vector" d="M0.590576 11L6.05041 6L0.590576 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</div>
+								</a>
+							</li>
+							<li class="menu__categories_item" onmouseover="openSubcategory(event, 'Supboards')">
+								<a  class="menu__categories_link" href="#">
+									<img  class="menu__categories_img" src="./img/catalog-images/supboards.png" alt="Категория">
+									<p>Сапборды</p>
+									<div class="right">
+										<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path id="Vector" d="M0.590576 11L6.05041 6L0.590576 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</div>
+								</a>
+							</li>
+							<li class="menu__categories_item" onmouseover="openSubcategory(event, 'Tourism')">
+								<a  class="menu__categories_link" href="#">
+									<img  class="menu__categories_img" src="./img/catalog-images/tourism.png" alt="Категория">
+									<p>Туризм</p>
+									<div class="right">
+										<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path id="Vector" d="M0.590576 11L6.05041 6L0.590576 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</div>
+								</a>
+							</li>
+							<li class="menu__categories_item" onmouseover="openSubcategory(event, 'Simulators')">
+								<a  class="menu__categories_link" href="#">
+									<img  class="menu__categories_img" src="./img/catalog-images/simulators.png" alt="Категория">
+									<p>Тренажеры</p>
+									<div class="right">
+										<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path id="Vector" d="M0.590576 11L6.05041 6L0.590576 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</div>
+								</a>
+							</li>
+							<li class="menu__categories_item" onmouseover="openSubcategory(event, 'Electric-scooters-parts')">
+								<a  class="menu__categories_link" href="#">
+									<img  class="menu__categories_img" src="./img/catalog-images/electric-scooters-parts.png" alt="Категория">
+									<p>Запчасти для электросамокатов</p>
+									<div class="right">
+										<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path id="Vector" d="M0.590576 11L6.05041 6L0.590576 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</div>
+								</a>
+							</li>
+							<li class="menu__categories_item" onmouseover="openSubcategory(event, 'Backpacks-and-bike-bags')">
+								<a  class="menu__categories_link" href="#">
+									<img  class="menu__categories_img" src="./img/catalog-images/backpacks-and-bike-bags.png" alt="Категория">
+									<p>Рюкзаки и велосумки</p>
+									<div class="right">
+										<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path id="Vector" d="M0.590576 11L6.05041 6L0.590576 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</div>
+								</a>
+							</li>
+							<li class="menu__categories_item"  onmouseover="openSubcategory(event, 'Other')">
+								<a  class="menu__categories_link" href="#">
+									<img  class="menu__categories_img" src="./img/catalog-images/other.png" alt="Категория">
+									<p>Другое</p>
+									<div class="right">
+										<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path id="Vector" d="M0.590576 11L6.05041 6L0.590576 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</div>
+								</a>
+							</li>
+							<li class="menu__categories_item"  onmouseover="openSubcategory(event, 'Sale')">
+								<a  class="menu__categories_link" href="#">
+									<img  class="menu__categories_img" src="./img/catalog-images/sale.png" alt="Категория">
+									<p>Распродажа</p>
+									<div class="right">
+										<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path id="Vector" d="M0.590576 11L6.05041 6L0.590576 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</div>
+								</a>
+							</li>
+							<li class="menu__categories_item" onmouseover="openSubcategory(event, 'New')">
+								<a  class="menu__categories_link" href="#">
+									<img  class="menu__categories_img" src="./img/catalog-images/new.png" alt="Категория">
+									<p>Новинки</p>
+									<div class="right">
+										<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path id="Vector" d="M0.590576 11L6.05041 6L0.590576 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</div>
+								</a>
+							</li>
+							<li class="menu__categories_item" onmouseover="openSubcategory(event, 'Rent')">
+								<a  class="menu__categories_link" href="#">
+									<div  class="menu__categories_img" ></div>
+									<p>Прокат оборудования</p>
+									<div class="right">
+										<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path id="Vector" d="M0.590576 11L6.05041 6L0.590576 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</div>
+								</a>
+							</li>
+							<li class="menu__categories_item"  onmouseover="openSubcategory(event, 'Repair')">
+								<a  class="menu__categories_link" href="#">
+									<div  class="menu__categories_img" ></div>
+									<p>Ремонт и Облуживание</p>
+									<div class="right">
+										<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path id="Vector" d="M0.590576 11L6.05041 6L0.590576 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="Bicycles" class="menu__subcategories">
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="Electric-scooters" class="menu__subcategories">
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="Scooters" class="menu__subcategories">
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="Skateboards" class="menu__subcategories">
+					
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="Roller-skates" class="menu__subcategories">
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="Bike-accessiores" class="menu__subcategories">
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="Bike-parts" class="menu__subcategories">
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Амортизаторы и вилки</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Амортизаторы
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Вилки
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Запчасти для вилок
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Запчасти для амортизаторов
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Привод</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Кассеты и трещётки
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Звёзды и рокринги
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Системы (шатуны)
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Педали
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Каретки
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Цепи
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Натяжители и успокоители
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Седла и подседельные штыри</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Сёдла
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Штири
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Подседельные зажимы
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Тормозные системы</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Тормоза дисковые гидравлические
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Тормоза дисковые механические
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Роторы
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Адаптеры
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Колодки
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Тормоза V-Brake
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Тормоза клещевые
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Тормоза кантиливерные
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Тормозные ручки
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Запчасти для тормозных систем
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Колёса и комплектующие</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Покрышки
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Камеры
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Обода
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Колеса в сборе
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Втулки
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Запчасти для втулок
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Герметики
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Ниппели
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Спицы
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Флипперы
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Рамы и комплектующие</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Рамы
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Петухи
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Защита пера
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Пеги
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Рулевое управление</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Рули
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Рога
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Грипсы и обмотки руля
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Выносы
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Рулевые колонки
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Якоря и проставочные кольца
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Инструменты</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Мультитулы
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Ключи специальные
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Съемники
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Выжимники цепи
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Ремнаборы для камер и покрышек
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Наборы инструментов
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Монтажки
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Трансмиссия</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Манетки
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Переключатели задние
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Переключтели передние
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="Scooters-parts" class="menu__subcategories">
+					
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="Skis" class="menu__subcategories">
+					
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="Snowboards" class="menu__subcategories">
+					
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem 
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="Supboards" class="menu__subcategories">
+					
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem 
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="Tourism" class="menu__subcategories">
+					
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem 
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="Simulators" class="menu__subcategories">
+					
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem 
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="Electric-scooters-parts" class="menu__subcategories">
+					
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem 
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="Backpacks-and-bike-bags" class="menu__subcategories">
+					
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem 
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="Other" class="menu__subcategories">
+					
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem 
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="Sale" class="menu__subcategories">
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem 
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="New" class="menu__subcategories">
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem 
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="Rent" class="menu__subcategories">
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem 
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="Repair" class="menu__subcategories">
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem ipsum</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem 
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu__subcategories_item">
+						<div class="menu__subcategories_title">
+							<a href="#">Lorem</a>
+							<div class="menu__subcategories_img right">
+							</div>
+						</div>
+						<ul class="menu__subcategories_types">
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+							<li class="menu__subcategories_type">
+								<a  class="menu__subcategories_link" href="#">
+									Lorem ipsum
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="menu__brands">
+					<ul class="menu__brands_items">
+						<li class="menu__brands_item">
+							<a href="#" class="menu__brands_link">
+								<div class="menu__brands_img"></div>
+								<p class="mobile">Lorem</p>
+								<div class="right mobile">
+									<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path id="Vector" d="M0.590576 11L6.05041 6L0.590576 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</div>
+							</a>
+						</li>
+						<li class="menu__brands_item">
+							<a href="#" class="menu__brands_link">
+								<div class="menu__brands_img"></div>
+								<p class="mobile">Lorem</p>
+								<div class="right mobile">
+									<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path id="Vector" d="M0.590576 11L6.05041 6L0.590576 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</div>
+							</a>
+						</li>
+						<li class="menu__brands_item">
+							<a href="#" class="menu__brands_link">
+								<div class="menu__brands_img"></div>
+								<p class="mobile">Lorem</p>
+								<div class="right mobile">
+									<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path id="Vector" d="M0.590576 11L6.05041 6L0.590576 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</div>
+							</a>
+						</li>
+						<li class="menu__brands_item">
+							<a href="#" class="menu__brands_link">
+								<div class="menu__brands_img"></div>
+								<p class="mobile">Lorem</p>
+								<div class="right mobile">
+									<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path id="Vector" d="M0.590576 11L6.05041 6L0.590576 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</div>
+							</a>
+						</li>
+						<li class="menu__brands_item">
+							<a href="#" class="menu__brands_link">
+								<div class="menu__brands_img"></div>
+								<p class="mobile">Lorem</p>
+								<div class="right mobile">
+									<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path id="Vector" d="M0.590576 11L6.05041 6L0.590576 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</div>
+							</a>
+						</li>
+						<li class="menu__brands_item">
+							<a href="#" class="menu__brands_link">
+								<div class="menu__brands_img"></div>
+								<p class="mobile">Lorem</p>
+								<div class="right mobile">
+									<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path id="Vector" d="M0.590576 11L6.05041 6L0.590576 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</div>
+							</a>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+			
+		</div>
 		<main class="main">
+			
 			<div class="container">
 				<h1>Байк Центр — сеть специализированных магазинов товаров для спорта в Краснодаре</h1>
 				<section class="main__navigation">
@@ -902,5 +6038,6 @@
 		</footer>
 	</div>
 </body>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script src="./js/script.js"></script>
 </html>
